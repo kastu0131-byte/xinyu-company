@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiangsu Xinyu Biotech - The Science of Color</title>
+    <!-- Fonts: Playfair Display for Elegance, Inter/Roboto for Modernity -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- Transparent Floating Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <div class="logo">
+                <span class="logo-text">XINYU<span class="highlight">CHEM</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="active">首页</a>
+                <a href="#about">品牌故事</a>
+                <a href="#products">核心产品</a>
+                <a href="#contact">联系我们</a>
+            </div>
+            <div class="nav-actions">
+                <!-- Custom Language Trigger -->
+                <div class="lang-selector">
+                    <span class="current-lang">Global (EN/CN) <i data-lucide="globe"></i></span>
+                    <div id="google_translate_element"></div>
+                </div>
+            </div>
+            <button class="mobile-toggle"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <!-- Full Screen Immersive Hero -->
+    <header id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="animate-reveal delay-1">The Science of <span class="gradient-text">Vibrant Color</span></h2>
+            <h1 class="animate-reveal delay-2">毛发染料行业领导品牌</h1>
+            <p class="animate-reveal delay-3">Creating the world's most vivid and safe hair cosmetic solutions.
+                <br>专注染发中间体 20 年，定义色彩新标准。
+            </p>
+            <div class="hero-btns animate-reveal delay-4">
+                <a href="#products" class="btn btn-primary">探索色彩 Explore Color</a>
+                <a href="#contact" class="btn btn-line">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- Visual Product Grid Section -->
+    <section id="products" class="section-visual-grid">
+        <div class="container">
+            <div class="section-header center">
+                <span class="overline">Our Expertise</span>
+                <h2>核心产品系列</h2>
+                <div class="divider-center"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Card 1: Hair Dye -->
+                <div class="gallery-card large">
+                    <img src="https://images.unsplash.com/photo-1492106087820-71f1a45d2b88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Hair Dye">
+                    <div class="card-overlay">
+                        <h3>Hair Dye Intermediates</h3>
+                        <p>染发中间体</p>
+                        <a href="#" class="card-link">View Series <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2: UV Absorbers -->
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Cosmetics">
+                    <div class="card-overlay">
+                        <h3>UV Absorbers</h3>
+                        <p>紫外线吸收剂</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Enterprise -->
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Lab">
+                    <div class="card-overlay">
+                        <h3>R&D Center</h3>
+                        <p>研发中心</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Brand Section -->
+    <section id="about" class="section-about">
+        <div class="container split-layout">
+            <div class="about-visual">
+                <img src="https://images.unsplash.com/photo-1596472537566-8d437e127271?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Nature and Science">
+            </div>
+            <div class="about-content">
+                <span class="overline">Who We Are</span>
+                <h2>江苏新宇生物科技</h2>
+                <p class="lead">致力于为全球客户提供高品质的染发中间体和医药中间体。</p>
+                <p>Located in Yixing, the "City of Pottery", Jiangsu Xinyu Biotech Co., Ltd. combines traditional
+                    dedication with modern biotechnology. We export to Europe, America, and Southeast Asia, setting
+                    global standards for purity and vibrancy.</p>
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="number">20+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">50+</span>
+                        <span class="label">Countries Exported</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="modern-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>XINYU<span class="highlight">CHEM</span></h3>
+                    <p>Bringing color to life through science.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i data-lucide="map-pin"></i> Yixing Economic Development Zone, Jiangsu, China</p>
+                    <p><i data-lucide="phone"></i> +86 0510-87446558</p>
+                    <p><i data-lucide="mail"></i> sales@xinyuchem.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jiangsu Xinyu Biotech Co., Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'zh-CN',
+                includedLanguages: 'zh-CN,ja,en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
