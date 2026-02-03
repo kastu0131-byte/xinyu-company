@@ -29,10 +29,19 @@
                 <a href="#contact">联系我们</a>
             </div>
             <div class="nav-actions">
-                <!-- Custom Language Trigger -->
-                <div class="lang-selector">
-                    <span class="current-lang">Global (EN/CN) <i data-lucide="globe"></i></span>
-                    <div id="google_translate_element"></div>
+                <!-- Custom Language Dropdown -->
+                <div class="custom-lang-dropdown">
+                    <button class="lang-btn">
+                        <i data-lucide="globe"></i> <span>Language</span> <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="lang-menu">
+                        <a href="#" data-lang="zh-CN">🇨🇳 中文 (简体)</a>
+                        <a href="#" data-lang="en">🇺🇸 English</a>
+                        <a href="#" data-lang="ja">🇯🇵 日本語</a>
+                    </div>
+                </div>
+                <!-- Hidden Google Widget for Engine (Must be 'visible' to load) -->
+                <div id="google_translate_element" style="position:absolute; opacity:0; pointer-events:none; top:0;">
                 </div>
             </div>
             <button class="mobile-toggle"><i data-lucide="menu"></i></button>
