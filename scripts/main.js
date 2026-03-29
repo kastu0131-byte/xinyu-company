@@ -20,22 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
-            const currentDisplay = window.getComputedStyle(navLinks).display;
-            if (currentDisplay === 'none') {
-                navLinks.style.display = 'flex';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.right = '0';
-                navLinks.style.backgroundColor = 'rgba(255,255,255,0.95)';
-                navLinks.style.backdropFilter = 'blur(10px)';
-                navLinks.style.padding = '20px';
-                navLinks.style.width = '200px';
-                navLinks.style.borderRadius = '0 0 0 10px';
-                navLinks.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-            } else {
-                navLinks.style.display = '';
-            }
+            navLinks.classList.toggle('mobile-open');
         });
     }
 
@@ -63,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     googleSelect.value = langCode;
 
                     // 2. Dispatch Events to trigger Google's listeners
-                    googleSelect.dispatchEvent(new Event('change'));
+                    googleSelect.dispatchEvent(new Event('change', { bubbles: true }));
 
                     // Optional: Update button text
                     const btnSpan = document.querySelector('.lang-btn span');
